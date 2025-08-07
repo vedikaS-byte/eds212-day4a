@@ -4,3 +4,22 @@ author: "Vedika"
 format: html
 editor: visual
 ---
+
+## Matrice Practice
+Create a matrice and mess with it! 
+```{r}
+# make a sequence of values from 1 to 10
+my_values <- seq(from = 1, to = 10,by =1)
+# always double check by printing or running variable for output 
+my_values
+
+# convert to matrix
+my_matrix <- matrix(data = my_values, nrow = 2, ncol = 5, byrow = F)
+
+my_matrix
+
+
+
+
+```
+
