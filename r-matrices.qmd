@@ -79,6 +79,8 @@ insect_yr2 <- insect_leslie%*% insect_yr1
 
 insect_yr2
 
+insect_yr3 <- insect_leslie%*% insect_yr2
+insect_yr3
 
 ```
 
