@@ -47,3 +47,44 @@ cats %*% dogs
 
 ```
 
+## Leslie matrix example
+Create a projection matrix. This is the center matrix that describes how the pop size at time t is projected into t+1. 
+
+```{r}
+# create matrix 
+insect_leslie <- matrix(c(0,0,600,0.2,0,0, 0,0.08), nrow = 3, ncol = 3, byrow = T)
+ insect_leslie
+
+
+
+```
+
+```{r}
+#insect lifestage population size (year 0 )
+insect_y0 <- c(1200, 700, 500)
+```
+
+# Find the pop for each lifestage at year 1
+```{r}
+insect_yr1 <- insect_leslie%*% insect_y0
+
+insect_yr1
+
+
+```
+
+Find the pop for each lifestage at year 2
+```{r}
+insect_yr2 <- insect_leslie%*% insect_yr1
+
+insect_yr2
+
+
+```
+
+
+
+
+
+
+
