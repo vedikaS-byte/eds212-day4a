@@ -85,6 +85,18 @@ insect_yr3
 ```
 
 ### another leslie matrix example
+```{r}
+#make the projection matrix
+tree_leslie <- matrix(data = c(0,0,5000,0.1, 0, 0, 0, 0.06, 0.95), nrow = 3, ncol = 3, byrow = T)
+
+tree_0 <- c(5000, 0,0)
+
+#year 1 
+tree_1 <- tree_leslie %*% tree_0
+
+
+
+```
 
 
 
