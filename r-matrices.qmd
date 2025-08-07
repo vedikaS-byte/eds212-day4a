@@ -18,7 +18,7 @@ my_matrix <- matrix(data = my_values, nrow = 2, ncol = 5, byrow = F)
 
 my_matrix
 
-
+matrix(data = my_values, nrow = 2, ncol = 3, byrow = T) # warning because dimensions do not provide enough slots for 10 numbers
 
 
 ```
