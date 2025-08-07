@@ -14,11 +14,22 @@ my_values <- seq(from = 1, to = 10,by =1)
 my_values
 
 # convert to matrix
-my_matrix <- matrix(data = my_values, nrow = 2, ncol = 5, byrow = F)
+my_matrix <- matrix(data = my_values, nrow = 2, ncol = 5, byrow = T)
 
 my_matrix
 
-matrix(data = my_values, nrow = 2, ncol = 3, byrow = T) # warning because dimensions do not provide enough slots for 10 numbers
+# matrix(data = my_values, nrow = 2, ncol = 3, byrow = T) # warning because dimensions do not provide enough slots for 10 numbers
+
+
+
+
+
+```
+
+```{r}
+my_values_2 <- seq(from = 21, to = 30)
+my_matrix2 <- matrix(data = my_values_2, nrow = 2, byrow = T)
+my_matrix2
 
 
 ```
