@@ -94,9 +94,16 @@ tree_0 <- c(5000, 0,0)
 #year 1 
 tree_1 <- tree_leslie %*% tree_0
 
+tree_2 <- tree_leslie %*% tree_1
 
+tree_3 <- tree_leslie %*% tree_2
 
-```
+tree_4 <- tree_leslie %*% tree_3
+
+print(tree_4)
+### and so on
+# it will take about four years to have the necessary variable amounts to have a sustainable population
+``` 
 
 
 
